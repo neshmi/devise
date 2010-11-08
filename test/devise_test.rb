@@ -23,6 +23,13 @@ class DeviseTest < ActiveSupport::TestCase
       assert_equal Devise, config
     end
   end
+  
+  test 'require email can be set to false' do
+    Devise.setup do |config|
+      config.require_email = false
+    end
+    assert_not User.require_email
+  end
 
   test 'stores warden configuration' do
     assert_equal Devise::FailureApp, Devise.warden_config.failure_app

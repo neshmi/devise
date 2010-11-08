@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "1.2.rc"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Jos\303\251 Valim", "Carlos Ant\303\264nio"]
-  s.date = %q{2010-10-10}
+  s.authors = ["José Valim", "Carlos Antônio"]
+  s.date = %q{2010-11-07}
   s.description = %q{Flexible authentication solution for Rails with Warden}
   s.email = %q{contact@plataformatec.com.br}
   s.extra_rdoc_files = [
@@ -116,6 +116,9 @@ Gem::Specification.new do |s|
      "test/devise_test.rb",
      "test/encryptors_test.rb",
      "test/failure_app_test.rb",
+     "test/generators/generators_test_helper.rb",
+     "test/generators/install_generator_test.rb",
+     "test/generators/views_generator_test.rb",
      "test/integration/authenticatable_test.rb",
      "test/integration/confirmable_test.rb",
      "test/integration/database_authenticatable_test.rb",

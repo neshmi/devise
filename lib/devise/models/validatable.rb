@@ -53,11 +53,11 @@ module Devise
       end
 
       def email_required?
-        true
+        self.class.send(:require_email) || true
       end
 
       module ClassMethods
-        Devise::Models.config(self, :email_regexp, :password_length)
+        Devise::Models.config(self, :email_regexp, :password_length, :require_email)
       end
     end
   end

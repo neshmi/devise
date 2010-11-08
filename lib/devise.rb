@@ -90,6 +90,10 @@ module Devise
   # Range validation for password length
   mattr_accessor :password_length
   @@password_length = 6..20
+  
+  # Require email by default
+  mattr_accessor :require_email
+  @@require_email = true
 
   # The time the user will be remembered without asking for credentials again.
   mattr_accessor :remember_for
